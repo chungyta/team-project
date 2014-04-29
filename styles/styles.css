@@ -63,18 +63,16 @@ img { border: 0; max-width: 100%; }
 body{
   background-image: url('../images/bg.png');
   background-repeat:repeat;
-  border-collapse:collapse;
   margin-left:auto;
   margin-right:auto;
+  font-family: 'helvetica';
+  font-size: 20px;
 }
 header{
   text-align:center;
   margin-left: auto;
   margin-right:auto;
-}
-footer{
-  margin-left:auto;
-  margin-right:auto;
+  height:80px;
 }
 /****************************/
 /* END basic components END */
@@ -86,11 +84,13 @@ footer{
 header li{
   font-size:24px;
 }
-#dd-menu{
+#dd-menu > li{
+  padding-top:20px;
+  padding-bottom:20px;
   text-align:center;
 }
 header ul{
-  text-align:left;
+  text-align:center;
 }
 #dd-menu ul {
   display:none;
@@ -135,9 +135,6 @@ header li > a:hover{
   border-bottom: 3px solid rgb(235,253,212);
   border-bottom-right-radius:5px;
 }
-#dd-suport:hover > li{
-  border-left: 3px solid rgb(235,253,212);
-}
 /***************************************************/
 /* END border definition around navigation bar END */
 /***************************************************/
@@ -148,7 +145,8 @@ header li > a:hover{
 #dd-social-media{
   height:50px;
   text-align:right;
-  padding-top:5px;
+  padding-top:25px;
+  padding-right:25px;
 }
 #dd-twitter{
   vertical-align:text-bottom:
@@ -163,38 +161,91 @@ header li > a:hover{
 /**************************************/
 /* START main body <div> styles START */
 /**************************************/
+#dd-wrapper{
+  font-size: 18px;
+}
 #dd-large-banner{
-  height:600px;
+  padding: 180px;
+  height:500px;
   border: 5px solid rgb(235,253,212);
   background: rgba(235,253,212,0.8);
+  font-size: 100px;
+  text-align:center;
+  color: rgba(200,235,190,0.9);
+}
+.title{
+  font-size:130%;
 }
 #dd-left-content{
-  height:500px;
+  height:400px;
   border: 5px solid rgb(235,253,212);
+  padding-top:15px;
+  overflow-y:hidden;
+  overflow-y:scroll;
 }
 #dd-right-content{
-  height:500px;
+  padding-top:15px;
+  height:400px;
   border: 5px solid rgb(235,253,212);
+  overflow-y:hidden;
+  overflow-y: scroll;
 }
 #dd-bottom-content{
-  height:300px;
+  height:200px;
   border: 5px solid rgb(235,253,212);
+  text-align:center;
+
+}
+#dd-bottom-content .row{
+  text-align:center;
+  padding-top:50px;
+}
+#dd-bottom-content div{
+text-align:center;
+
+}
+a>div.xs-col-2{
+text-align:center;
+/*   margin: 5px 10px 5px 10px; */
 }
 /**********************************/
 /* END main body <div> styles END */
 /**********************************/
 
+/****************************/
+/* START table styles START */
+/****************************/
+td{
+  padding: 5px;
+}
+tr{
+  border: 3px solid rgb(235,253,212);
+  padding: 20px;
+}
+td{
+  border: 3px solid rgb(235,253,212);
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+table{
+ border: 3px solid rgb(235,253,212);
+ padding: 10px;
+ border-collapse:collapse;
+}
+
+/************************/
+/* END table styles END */
+/************************/
+
 /******************************/
 /* START footer styling START */
 /******************************/
 footer div{
-  text-align:left;
-  display:table-cell;
-  margin-left:auto;
-  margin-right:auto;
+  text-align:center;
   height:50px;
   border: 5px solid rgb(235,253,212);
   border-collapse:collapse;
+  padding-top:5px;
 }
 /**************************/
 /* END footer styling END */
