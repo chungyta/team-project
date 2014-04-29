@@ -1,23 +1,35 @@
 /**
-* DaphneDixon: styles/styles.css
+* team-project: styles/styles.css
 * author: 鍾耀堂 (Anthony Chung)
 * date created: 4/22/2014
 * date updated: 4/28/2014
 **/
 
+/********************************************/
+/* START universal screen size styles START */
+/********************************************/
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
 
+}
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
 
+}
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {  }
+@media (min-width: @screen-lg-min) {  
 
-/* browser resets :: default settings */
+}
+/****************************************/
+/* END universal screen size styles END */
+/****************************************/
+
+/**************************************************/
+/* START browser resets :: default settings START */
+/**************************************************/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -32,27 +44,158 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 html { height: 101%; }
-body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, sans-serif; padding-bottom: 60px; }
-
+body { font-size: 62.5%; line-height: 1; font-family: Helvetica, Arial, Tahoma, sans-serif; padding-bottom: 60px; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 ol, ul { list-style: none; }
-
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 strong { font-weight: bold; } 
-
 table { border-collapse: collapse; border-spacing: 0; }
 img { border: 0; max-width: 100%; }
+/****************************/
+/* END browser defaults END */
+/****************************/
 
+/********************************/
+/* START basic components START */
+/********************************/
 body{
-
   background-image: url('../images/bg.png');
   background-repeat:repeat;
-
+  border-collapse:collapse;
+  margin-left:auto;
+  margin-right:auto;
 }
 header{
-  background: rgba(185,225,155,0.9);
-
+  text-align:center;
+  margin-left: auto;
+  margin-right:auto;
 }
+footer{
+  margin-left:auto;
+  margin-right:auto;
+}
+/****************************/
+/* END basic components END */
+/****************************/
+
+/************************************/
+/* START navigation bar items START */
+/************************************/
+header li{
+  font-size:24px;
+}
+#dd-menu{
+  text-align:center;
+}
+header ul{
+  text-align:left;
+}
+#dd-menu ul {
+  display:none;
+}
+header li .page{
+  padding-left: auto;
+  padding-right: auto;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 75%;
+  color:rgb(177,246,203); /* tab text color */
+}
+/* text inside nav bar */
+header li > a{
+  color:rgb(80,159,116);
+}
+header li > a:hover{
+  font-style:normal;
+  text-decoration:none;
+  color:rgb(98,136,112);
+}
+/********************************/
+/* END navigation bar items END */
+/********************************/
+
+/***************************************************/
+/* START define border around navigation bar START */
+/***************************************************/
+#dd-about{
+  border-left: 3px solid rgb(235,253,212);
+  border-bottom: 3px solid rgb(235,253,212);
+  border-bottom-left-radius:5px;
+}
+#dd-events{
+  border-bottom: 3px solid rgb(235,253,212);
+}
+#dd-community{
+  border-bottom: 3px solid rgb(235,253,212);
+}
+#dd-support{
+  border-right: 3px solid rgb(235,253,212);
+  border-bottom: 3px solid rgb(235,253,212);
+  border-bottom-right-radius:5px;
+}
+#dd-suport:hover > li{
+  border-left: 3px solid rgb(235,253,212);
+}
+/***************************************************/
+/* END border definition around navigation bar END */
+/***************************************************/
+
+/*******************************************/
+/* START social media button styling START */
+/*******************************************/
+#dd-social-media{
+  height:50px;
+  text-align:right;
+  padding-top:5px;
+}
+#dd-twitter{
+  vertical-align:text-bottom:
+}
+#dd-fb{
+  vertical-align:text-bottom;
+}
+/*******************************/
+/* END social media button END */
+/*******************************/
+
+/**************************************/
+/* START main body <div> styles START */
+/**************************************/
+#dd-large-banner{
+  height:600px;
+  border: 5px solid rgb(235,253,212);
+  background: rgba(235,253,212,0.8);
+}
+#dd-left-content{
+  height:500px;
+  border: 5px solid rgb(235,253,212);
+}
+#dd-right-content{
+  height:500px;
+  border: 5px solid rgb(235,253,212);
+}
+#dd-bottom-content{
+  height:300px;
+  border: 5px solid rgb(235,253,212);
+}
+/**********************************/
+/* END main body <div> styles END */
+/**********************************/
+
+/******************************/
+/* START footer styling START */
+/******************************/
+footer div{
+  text-align:left;
+  display:table-cell;
+  margin-left:auto;
+  margin-right:auto;
+  height:50px;
+  border: 5px solid rgb(235,253,212);
+  border-collapse:collapse;
+}
+/**************************/
+/* END footer styling END */
+/**************************/
