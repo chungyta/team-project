@@ -2,12 +2,12 @@
 * DaphneDixon: js/script.js
 * author: 鍾耀堂 (Anthony Chung)
 * date created: 4/22/2014
-* date updated: 4/28/2014
+* date updated: 5/4/2014
 **/
 
 $( function() { 
 
- $( '#dd-menu li' ).each( function() {
+ $( '#dd_menu li' ).each( function() {
   $( this ).hover( function() {
    clearTimeout( $.data( this, 'timer' ) );
    $( 'ul', this ).stop( true, true ).slideDown( 200 );
